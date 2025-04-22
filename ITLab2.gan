@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="SolarPlant" company="Kas" webLink="http://" view-date="2025-02-24" view-index="0" gantt-divider-location="955" resource-divider-location="406" version="3.3.3316" locale="uk_UA">
+    <description/>
+    <view zooming-state="default:2" id="gantt-chart">
+        <field id="tpd3" name="Назва" width="362" order="0"/>
+        <field id="tpd12" name="Вартість" width="134" order="1"/>
+        <field id="tpd6" name="Тривалість" width="64" order="2"/>
+        <field id="tpd5" name="Дата завершення" width="116" order="3"/>
+        <field id="tpd13" name="Виконавців" width="134" order="4"/>
+        <field id="tpd4" name="Дата початку" width="129" order="5"/>
+        <option id="filter.completedTasks" value="false"/>
+        <option id="filter.dueTodayTasks" value="false"/>
+        <option id="filter.overdueTasks" value="false"/>
+        <option id="filter.inProgressTodayTasks" value="false"/>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Ім'я" width="255" order="0"/>
+        <field id="1" name="Типова роль" width="132" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="0" uid="cd4ed0064f7c444e96027c4420e4a7b5" name="Підготовчий етап" meeting="false" start="2025-02-03" duration="7" complete="0" expand="false">
+            <depend id="17" type="2" difference="0" hardness="Strong"/>
+            <depend id="25" type="2" difference="0" hardness="Strong"/>
+            <task id="36" uid="5430c2bb96814b7bbc46545b7a5de590" name="Завершення підготовки" meeting="true" start="2025-02-12" duration="0" complete="0" expand="true">
+                <depend id="10" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="7" uid="f591f5dc8c8a4b5c91971835391eb501" name="Отримання дозволів" meeting="false" start="2025-02-07" duration="3" complete="0" expand="true">
+                <depend id="36" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="8" uid="ed6212b09eda451b8947cba1fc4dc3b5" name="Погодження з місцевою владою" meeting="false" start="2025-02-05" duration="2" complete="0" expand="true">
+                <depend id="7" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="1" uid="901640f285d441558aaae6da570010a8" name="Аналіз ділянки" meeting="false" start="2025-02-03" duration="2" complete="0" expand="true">
+                <depend id="8" type="2" difference="0" hardness="Strong"/>
+            </task>
+        </task>
+        <task id="9" uid="57bf591fc1fc429fa6dec9b11f5a3c45" name="Проєктування" meeting="false" project="true" start="2025-02-12" duration="8" complete="0" expand="false">
+            <task id="12" uid="8ecf2332cf9943319656499e03e3ebdc" name="Проєкт затверджено" meeting="true" start="2025-02-24" duration="0" complete="0" expand="true">
+                <depend id="14" type="2" difference="0" hardness="Strong"/>
+                <depend id="15" type="2" difference="0" hardness="Strong"/>
+                <depend id="18" type="2" difference="0" hardness="Strong"/>
+                <depend id="34" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="11" uid="fc12f07cc28d4ee38e1eca6eccd425dd" name="Вибір типу обладнання" meeting="false" start="2025-02-18" duration="4" complete="0" expand="true">
+                <depend id="12" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="10" uid="aa698947eac643939e27ae3fd51b5737" name="Розбка тех. документації" meeting="false" start="2025-02-12" duration="4" complete="0" expand="true">
+                <depend id="11" type="2" difference="0" hardness="Strong"/>
+            </task>
+        </task>
+        <task id="13" uid="27e2e7f63c3a4ab2a6f50e6767ffa766" name="Закупівля матеріалів" meeting="false" project="true" start="2025-02-24" duration="6" complete="0" expand="false">
+            <task id="16" uid="da19e079b3324df6ae8704ec80080f50" name="Матеріали доставлено" meeting="true" start="2025-03-04" duration="0" complete="0" expand="true">
+                <depend id="19" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="34" uid="34931d0bf28d4dd4b6acaf65d19bdf16" name="Щитки, сенсори" meeting="false" start="2025-02-26" duration="4" complete="0" expand="true">
+                <depend id="16" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="15" uid="e063bcbff15b4eef9e9e23c3734b9fd5" name="Закупівля кабелів, кріплень, інверторі" meeting="false" start="2025-02-25" duration="4" complete="0" expand="true">
+                <depend id="16" type="2" difference="0" hardness="Strong"/>
+                <depend id="34" type="1" difference="1" hardness="Strong"/>
+            </task>
+            <task id="14" uid="ae8b59014be24c689b2714660645456d" name="Закупівля сонячних панелей" meeting="false" start="2025-02-24" duration="4" complete="0" expand="true">
+                <depend id="15" type="1" difference="1" hardness="Strong"/>
+                <depend id="16" type="2" difference="0" hardness="Strong"/>
+            </task>
+        </task>
+        <task id="17" uid="c8de54879df949739361f8375bcb1f73" name="Підготовка майданчика" meeting="false" project="true" start="2025-02-24" duration="14" complete="0" expand="false">
+            <task id="20" uid="7ef0c4a363a0408e92fe61f8d73a4d52" name="Ділянка готова" meeting="true" start="2025-03-14" duration="0" complete="0" expand="true">
+                <depend id="22" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="19" uid="354297e3becf4ea282bfe86a67870dba" name="Підведення інфраструктури" meeting="false" start="2025-03-05" duration="7" complete="0" expand="true">
+                <depend id="20" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="18" uid="b88bc3b82593454eadee36bd300e4e47" name="Очищення та вирівнювання" meeting="false" start="2025-02-24" duration="7" complete="0" expand="true">
+                <depend id="19" type="2" difference="0" hardness="Strong"/>
+            </task>
+        </task>
+        <task id="21" uid="46a434eb933c4b5a8af522ef8d94b9ad" name="Монтаж" meeting="false" project="true" start="2025-03-14" duration="17" complete="0" expand="false">
+            <task id="37" uid="eda8b3e36c014215a076ded9eb5849eb" name="Завершення монтажних робіт" meeting="true" start="2025-03-26" duration="0" complete="0" expand="true"/>
+            <task id="35" uid="1ff7f4d165f74f17a34c4b98f39a3fa5" name="Організація охорони" meeting="false" start="2025-03-25" duration="1" complete="0" expand="true">
+                <depend id="37" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="25" uid="f8016f4d75b34cdf8affa559be42bddf" name="Обладнання встановлено" meeting="true" start="2025-04-08" duration="0" complete="0" expand="true">
+                <depend id="27" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="24" uid="04c90f1981f44ff29214da49b1420b8a" name="Підключення до інверторів" meeting="false" start="2025-03-27" duration="8" complete="0" expand="true">
+                <depend id="25" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="23" uid="3cbc4df6493a47ac9bae7bf63e1ace41" name="Монтаж сонячних панелей" meeting="false" start="2025-03-25" duration="10" complete="0" expand="true">
+                <depend id="24" type="1" difference="2" hardness="Strong"/>
+            </task>
+            <task id="22" uid="a20f7796ea9a4e92a10f4fe78213b5aa" name="Встановлення опор" meeting="false" start="2025-03-14" duration="7" complete="0" expand="true">
+                <depend id="23" type="2" difference="0" hardness="Strong"/>
+                <depend id="35" type="2" difference="0" hardness="Strong"/>
+            </task>
+        </task>
+        <task id="26" uid="a88775c9fa8649c6ae56ff9eda00fd40" name="Підключення та тестування" meeting="false" project="true" start="2025-04-08" duration="8" complete="0" expand="false">
+            <task id="29" uid="b48cfa077d854315b74a4c8d5c2f8106" name="Тестування успішно завершено" meeting="true" start="2025-04-18" duration="0" complete="0" expand="true"/>
+            <task id="28" uid="11b4c13a25f54304bae9a0287191ed2e" name="Проведення тестів ефективності" meeting="false" start="2025-04-15" duration="3" complete="0" expand="true">
+                <depend id="29" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="27" uid="dfc0c9dd14084778809bbdb5ef1e969a" name="Підключення до мережі" meeting="false" start="2025-04-08" duration="5" complete="0" expand="true">
+                <depend id="28" type="2" difference="0" hardness="Strong"/>
+            </task>
+        </task>
+        <task id="30" uid="2510eaad775f45a2894c041b35ffd03f" name="Введення в експлуатацію" meeting="false" project="true" start="2025-04-21" duration="18" complete="0" expand="false">
+            <task id="33" uid="f76d7ec235c64b53a3fe6370b76803c6" name="Проєкт завершено" meeting="true" start="2025-04-25" duration="0" complete="0" expand="true"/>
+            <task id="38" uid="5e478ea4315b43698cee670996c7fcd2" name="Найм працівників" meeting="false" start="2025-04-25" duration="7" complete="0" expand="true">
+                <depend id="39" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="32" uid="c15fa12f903a49a99f0e877613702347" name="Оформлення документів" meeting="false" start="2025-04-21" duration="4" complete="0" expand="true">
+                <depend id="33" type="2" difference="0" hardness="Strong"/>
+                <depend id="38" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="39" uid="ad0d160c11c44ff58356734c7a6bdd7f" name="Навчання персоналу" meeting="false" start="2025-05-06" duration="7" complete="0" expand="true"/>
+        </task>
+    </tasks>
+    <resources>
+        <resource id="4" name="Менеджер проєкту" function="Default:1" contacts="" phone="">
+            <rate name="standard" value="300"/>
+        </resource>
+        <resource id="0" name="Інженер" function="2" contacts="" phone="">
+            <rate name="standard" value="250"/>
+        </resource>
+        <resource id="12" name="Бугалтер" function="2" contacts="" phone="">
+            <rate name="standard" value="200"/>
+        </resource>
+        <resource id="13" name="Юрист" function="2" contacts="" phone="">
+            <rate name="standard" value="220"/>
+        </resource>
+        <resource id="1" name="Монтажник" function="2" contacts="" phone="">
+            <rate name="standard" value="200"/>
+        </resource>
+        <resource id="2" name="Електрик" function="2" contacts="" phone="">
+            <rate name="standard" value="220"/>
+        </resource>
+        <resource id="3" name="Логіст" function="2" contacts="" phone="">
+            <rate name="standard" value="180"/>
+        </resource>
+        <resource id="11" name="Інструктор" function="2" contacts="" phone="">
+            <rate name="standard" value="250"/>
+        </resource>
+        <resource id="5" name="Сонячні панелі(матеріал)" function="1" contacts="" phone="">
+            <rate name="standard" value="60000"/>
+        </resource>
+        <resource id="6" name="Інвертори (матеріал)" function="1" contacts="" phone="">
+            <rate name="standard" value="12000"/>
+        </resource>
+        <resource id="7" name="Кріплення для панелей" function="1" contacts="" phone="">
+            <rate name="standard" value="7000"/>
+        </resource>
+        <resource id="8" name="Кабелі та роз’єми" function="1" contacts="" phone="">
+            <rate name="standard" value="8250"/>
+        </resource>
+        <resource id="9" name="Інструменти/обладнання(матеріал)" function="1" contacts="" phone="">
+            <rate name="standard" value="5000"/>
+        </resource>
+        <resource id="14" name="Щитки" function="1" contacts="" phone="">
+            <rate name="standard" value="5000"/>
+        </resource>
+        <resource id="15" name="Сенсори" function="1" contacts="" phone="">
+            <rate name="standard" value="4000"/>
+        </resource>
+        <resource id="16" name="Спец техніка підготовка" function="2" contacts="" phone="">
+            <rate name="standard" value="1000"/>
+        </resource>
+        <resource id="17" name="Спец. Техніка монтаж" function="2" contacts="" phone="">
+            <rate name="standard" value="1000"/>
+        </resource>
+        <resource id="18" name="Спец. Техніка підготовка" function="2" contacts="" phone="">
+            <rate name="standard" value="1500"/>
+        </resource>
+        <resource id="19" name="Монтажник 2" function="2" contacts="" phone="">
+            <rate name="standard" value="250"/>
+        </resource>
+        <resource id="20" name="Сертифікація" function="1" contacts="" phone="">
+            <rate name="standard" value="1500"/>
+        </resource>
+        <resource id="21" name="Охоронна фірма" function="2" contacts="" phone="">
+            <rate name="standard" value="500"/>
+        </resource>
+        <resource id="22" name="" function="2" contacts="" phone=""/>
+    </resources>
+    <allocations>
+        <allocation task-id="7" resource-id="4" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="8" resource-id="4" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="20" resource-id="4" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="25" resource-id="4" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="29" resource-id="4" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="33" resource-id="4" function="Default:1" responsible="true" load="0.0"/>
+        <allocation task-id="12" resource-id="4" function="Default:1" responsible="true" load="0.0"/>
+        <allocation task-id="36" resource-id="4" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="0" resource-id="4" function="Default:1" responsible="true" load="0.0"/>
+        <allocation task-id="38" resource-id="4" function="Default:1" responsible="true" load="0.0"/>
+        <allocation task-id="17" resource-id="4" function="Default:1" responsible="true" load="50.0"/>
+        <allocation task-id="13" resource-id="4" function="Default:1" responsible="true" load="50.0"/>
+        <allocation task-id="9" resource-id="4" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="30" resource-id="4" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="11" resource-id="0" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="1" resource-id="0" function="2" responsible="true" load="100.0"/>
+        <allocation task-id="10" resource-id="0" function="2" responsible="true" load="100.0"/>
+        <allocation task-id="19" resource-id="0" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="23" resource-id="0" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="28" resource-id="0" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="32" resource-id="12" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="7" resource-id="13" function="2" responsible="true" load="100.0"/>
+        <allocation task-id="32" resource-id="13" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="22" resource-id="1" function="Default:1" responsible="true" load="50.0"/>
+        <allocation task-id="23" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="24" resource-id="2" function="2" responsible="true" load="100.0"/>
+        <allocation task-id="27" resource-id="2" function="2" responsible="true" load="100.0"/>
+        <allocation task-id="28" resource-id="2" function="2" responsible="true" load="100.0"/>
+        <allocation task-id="19" resource-id="2" function="2" responsible="true" load="100.0"/>
+        <allocation task-id="15" resource-id="3" function="2" responsible="true" load="34.0"/>
+        <allocation task-id="14" resource-id="3" function="2" responsible="true" load="33.0"/>
+        <allocation task-id="34" resource-id="3" function="2" responsible="true" load="33.0"/>
+        <allocation task-id="16" resource-id="3" function="2" responsible="true" load="0.0"/>
+        <allocation task-id="39" resource-id="11" function="2" responsible="true" load="100.0"/>
+        <allocation task-id="14" resource-id="5" function="1" responsible="false" load="100.0"/>
+        <allocation task-id="15" resource-id="6" function="1" responsible="false" load="100.0"/>
+        <allocation task-id="15" resource-id="7" function="1" responsible="false" load="100.0"/>
+        <allocation task-id="15" resource-id="8" function="1" responsible="false" load="100.0"/>
+        <allocation task-id="15" resource-id="9" function="1" responsible="false" load="100.0"/>
+        <allocation task-id="34" resource-id="14" function="1" responsible="false" load="100.0"/>
+        <allocation task-id="34" resource-id="15" function="1" responsible="false" load="100.0"/>
+        <allocation task-id="19" resource-id="16" function="1" responsible="false" load="100.0"/>
+        <allocation task-id="18" resource-id="16" function="1" responsible="false" load="50.0"/>
+        <allocation task-id="24" resource-id="17" function="1" responsible="false" load="50.0"/>
+        <allocation task-id="22" resource-id="17" function="1" responsible="false" load="100.0"/>
+        <allocation task-id="23" resource-id="17" function="1" responsible="false" load="50.0"/>
+        <allocation task-id="1" resource-id="18" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="22" resource-id="19" function="2" responsible="true" load="50.0"/>
+        <allocation task-id="24" resource-id="19" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="18" resource-id="19" function="2" responsible="true" load="100.0"/>
+        <allocation task-id="32" resource-id="20" function="1" responsible="false" load="100.0"/>
+        <allocation task-id="35" resource-id="21" function="2" responsible="true" load="0.0"/>
+        <allocation task-id="21" resource-id="21" function="2" responsible="true" load="100.0"/>
+        <allocation task-id="26" resource-id="21" function="2" responsible="true" load="100.0"/>
+    </allocations>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+    <roles>
+        <role id="1" name="Матеріал"/>
+        <role id="2" name="Робітник"/>
+    </roles>
+</project>
